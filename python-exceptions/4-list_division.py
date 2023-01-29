@@ -9,7 +9,8 @@ def list_division(my_list_1, my_list_2, list_length):
                 raise type
             elif my_list_2[i] == 0:
                 raise zero
-            else result.append(my_list_1[i]/my_list_2[i])
+            else:
+                result.append(my_list_1[i]/my_list_2[i])
         except range:
             print("out of range")
             result.append(0)
