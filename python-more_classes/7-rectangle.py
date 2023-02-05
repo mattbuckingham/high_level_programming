@@ -89,7 +89,7 @@ class Rectangle:
 
         for i in range(self.__height):
             rectangle = rectangle + \
-                (str(Rectangle.print_symbol) * self.__width)+ "\n"
+                (str(self.print_symbol) * self.__width)+ "\n"
 
         return rectangle[:-1]
 
