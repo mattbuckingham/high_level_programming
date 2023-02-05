@@ -12,7 +12,15 @@ class Rectangle:
         """
         no error checking yet
         """
+        if type(height) is not int:
+            raise TypeError("size must be an integer")
+        if height < 0:
+            raise ValueError("size must be >=0")
         self.__height = height
+        if type(width) is not int:
+            raise TypeError("size must be an integer")
+        if width < 0:
+            raise ValueError("size must be >=0")
         self.__witdth = width
 
     @property
@@ -23,7 +31,7 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self, ):
+    def height(self, value):
         """
         setter for height
         """
