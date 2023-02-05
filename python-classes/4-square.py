@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""defines a square class"""
+"""defines a class Square"""
 
 
 class Square:
@@ -13,7 +13,8 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >=0")
-        else self.__size = size
+        else:
+            self.__size = size
 
     @property
     def size(self):
@@ -25,11 +26,11 @@ class Square:
     @size.setter
     def size(self, value):
         """
-        sets the size of the square
+        setter for size
         """
         if type(value) is not int:
             raise TypeError("size must be an integer")
-        if size < 0:
+        if value < 0:
             raise ValueError("size must be >=0")
         else self.__size =  value
 
