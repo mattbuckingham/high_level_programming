@@ -1,16 +1,17 @@
 #!/usr/bin/python3
-
 """
 A module that defines a square class.
 """
 
 
 class Square:
-    """Square class"""
+    """
+    Square class
+    """
     def __init__(self, size=0):
         """
-        raises a TyeError error if the size is not an int
-        raises a ValueError if the size is less than 0
+        Raises a TyeError error if the size is not an int
+        Raises a ValueError if the size is less than 0
         """
         if type(size) is not int:
             raise TypeError("size must be an integer")
@@ -35,7 +36,8 @@ class Square:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >=0")
-        else self.__size =  value
+        else:
+            self.__size =  value
 
     def area(self):
         """
