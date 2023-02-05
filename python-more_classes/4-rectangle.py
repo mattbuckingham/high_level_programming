@@ -92,4 +92,4 @@ class Rectangle:
         """
         returns string that represents the input
         """
-        return "Rectangle({}{})".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
