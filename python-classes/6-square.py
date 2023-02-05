@@ -21,7 +21,7 @@ class Square:
             self.__size = size
 
         if (\
-            type(position) != tuple or\
+            type(position) != tuple or
             len(position) != 2 or\
             type(position[0]) != int or\
             type(position[1]) != int or\
