@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-"""test comment herer"""
+"""
+    Module that returns a list of all attributes and methods available to obj
+"""
+
+
 def lookup(obj):
     """
-    Module that returns a list of all attributes and methods available to obj
+    Method does as above
     """
 
     return dir(obj)
