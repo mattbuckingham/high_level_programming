@@ -15,7 +15,7 @@ Function Tests:
 		 -1
 
 		 >>> add_integer(1, 1.8)
-		 3
+		 2
 
 		 Add None and an int
 		 >>> add_integer(None, 3)
