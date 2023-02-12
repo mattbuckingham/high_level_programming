@@ -5,74 +5,75 @@ using ''BaseGeometry()''
 ---------------------
 
 Importing function from the module:
-	  >>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	  >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	  >>> bg = BaseGeometry()
 
-String and int:
-bg = BaseGeometry()
->>> bg.integer_validator("james", 48)
+	  String and int:
+	  >>> bg.integer_validator("james", 48)
 
-String and zero:
->>> bg.integer_validator("james", 0)
-Traceback (most recent call last):
-...
-ValueError: james must be greater than 0
 
-No arguments:
->>> bg.integer_validator()
-Traceback (most recent call last):
-...
-TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+	  String and zero:
+	  >>> bg.integer_validator("james", 0)
+	  Traceback (most recent call last):
+	  ...
+	  ValueError: james must be greater than 0
 
-bg.area test:
->>> bg.area()
-Traceback (most recent call last):
-...
-Exception: area() is not implemented
+	  No arguments:
+	  >>> bg.integer_validator()
+	  Traceback (most recent call last):
+	  ...
+	  TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-one argument:
-bg.integer_validator("james")
-Traceback (most recent call last):
-...
-TypeError: integer_validator() missing 1 required positional argument: 'value'
+	  bg.area test:
+	  >>> bg.area()
+	  Traceback (most recent call last):
+	  ...
+	  Exception: area() is not implemented
 
-Negative age:
-bg.integer_validator("james", -1)
-Traceback (most recent call last):
-...
-ValueError: james must be greater than 0
+	  one argument:
+	  bg.integer_validator("james")
+	  Traceback (most recent call last):
+	  ...
+	  TypeError: integer_validator() missing 1 required positional argument: 'value'
 
-Two strings:
->>> bg.integer_validator("james", "other james")
-Traceback (most recent call last):
-...
-TypeError: james must be an integer
+	  Negative age:
+	  bg.integer_validator("james", -1)
+	  Traceback (most recent call last):
+	  ...
+	  ValueError: james must be greater than 0
 
-String and a list:
->>> bg.integer_validator("james", (1,))
-Traceback (most recent call last):
-...
-TypeError: james must be an integer
+	  Two strings:
+	  >>> bg.integer_validator("james", "other james")
+	  Traceback (most recent call last):
+	  ...
+	  TypeError: james must be an integer
 
-String and an array:
->>> bg.integer_validator("james", [3])
-Traceback (most recent call last):
-...
-TypeError: james must be an integer
+	  String and a list:
+	  >>> bg.integer_validator("james", (1,))
+	  Traceback (most recent call last):
+	  ...
+	  TypeError: james must be an integer
 
-String and a set:
-bg.integer_validator("james", {3, 4})
-Traceback (most recent call last):
-...
-TypeError: james must be an integer
+	  String and an array:
+	  >>> bg.integer_validator("james", [3])
+	  Traceback (most recent call last):
+	  ...
+	  TypeError: james must be an integer
 
-String and a bool:
->>> bg.integer_validator("james", True)
-Traceback (most recent call last):
-...
-TypeError: james must be an integer
+	  String and a set:
+	  bg.integer_validator("james", {3, 4})
+	  Traceback (most recent call last):
+	  ...
+	  TypeError: james must be an integer
 
-String and None:
->>> bg.integer_validator("james", None)
-Traceback (most recent call last):
-...
-TypeError: james must be an integer
+	  String and a bool:
+	  >>> bg.integer_validator("james", True)
+	  Traceback (most recent call last):
+	  ...
+	  TypeError: james must be an integer
+
+	  String and None:
+	  >>> bg.integer_validator("james", None)
+	  Traceback (most recent call last):
+	  ...
+	  TypeError: james must be an integer
