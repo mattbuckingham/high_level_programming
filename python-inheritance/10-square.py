@@ -2,7 +2,7 @@
 """
 Class for a rectangle object
 """
-BaseGeometry = __import__('9-Rectangle').Rectangle
+Rectangle = __import__('9-Rectangle').Rectangle
 
 
 class Square(Rectangle):
