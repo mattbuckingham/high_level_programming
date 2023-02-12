@@ -5,7 +5,7 @@ using ''add_integer()''
 ---------------------
 
 Importing function from the module:
-		 >>> add_integer = __import__("add_integer").add_integer
+		 >>> add_integer = __import__('0-add_integer').add_integer
 
 Function Tests:
 		 >>> add_integer(1, 1)
