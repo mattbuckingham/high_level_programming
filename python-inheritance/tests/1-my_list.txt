@@ -30,6 +30,7 @@ Function Tests:
 		 [0, 1, 2, 4]
 
 		 Sort an empty list:
+		 >>> my_list = MyList()
 		 >>> my_list.print_sorted()
 		 []
 
