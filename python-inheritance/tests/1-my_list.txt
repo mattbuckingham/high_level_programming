@@ -1,0 +1,21 @@
+the ''MyList'' module
+======================
+
+using ''print_sorted()''
+------------------------
+
+Importing function from module:
+		  >>> MyList = __import__('1-my_list').MyList:
+
+Function Tests:
+		 Sort a list of integers:
+		 >>> my_list = MyList([1, 4, 2, 3, 5])
+		 >>> my_list.print_sorted()
+		 [1, 2, 3, 4, 5]
+
+		 Print the origional un-sorted object:
+		 >>> my_list = MyList([1, 4, 2, 3, 5])
+		 >>> my_list.print_sorted()
+		 [1, 2, 3, 4, 5]
+		 >>> print(my_list)
+		 [1, 4, 2, 3, 5]
