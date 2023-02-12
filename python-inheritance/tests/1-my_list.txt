@@ -5,7 +5,7 @@ using ''print_sorted()''
 ------------------------
 
 Importing function from module:
-		  >>> MyList = __import__('1-my_list').MyList:
+		  >>> MyList = __import__('1-my_list').MyList
 
 Function Tests:
 		 Sort a list of integers:
