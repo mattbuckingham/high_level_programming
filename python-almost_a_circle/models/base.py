@@ -13,7 +13,7 @@ class Base:
     def __init__(self, id=None):
 
         if id is None:
-            Base.id = __nb_objects
-            __nb_objects += 1
+            self.id = __nb_objects
+            Base.__nb_objects += 1
         else:
             self.id = id
