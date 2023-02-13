@@ -8,6 +8,7 @@ def print_square(size):
     """
     Print a square
     """
+
     if size < 0:
         raise ValueError("size must be >= 0")
     if type(size) is no int:
