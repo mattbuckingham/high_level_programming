@@ -26,7 +26,7 @@ Function Tests:
 
 	 Only one argument:
 	 >>> say_my_name("Smith")
-	 My name is Smith
+	 My name is Smith 
 
 	 No arguments:
 	 >>> say_my_name()
