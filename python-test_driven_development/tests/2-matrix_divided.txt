@@ -32,7 +32,7 @@ Function Tests:
 	 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 	 A string:
-	 matrix_divided("Matt", 3)
+	 matrix_divided(5, 3)
 	 Traceback (most recent call last):
 	 ...
 	 TypeError: matrix must be a matrix (list of lists) of integers/floats
