@@ -60,6 +60,5 @@ Test present: matrix= not a list of lists of integers / div= integer => TypeErro
 Test present: matrix= List of Lists of integers / div= string
 
      	 Div is float(inf)
-	>>> matrix_divided([[3, 3, 3],[6, 6, 6]], float('inf'))
-	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
-
+	 >>> matrix_divided([[3, 3, 3],[6, 6, 6]], float('inf'))
+	 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
