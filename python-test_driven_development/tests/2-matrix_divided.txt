@@ -57,8 +57,9 @@ Test present: matrix= not a list of lists of integers / div= integer => TypeErro
 	 Traceback (most recent call last):
 	 ...
 	 TypeError: matrix_divided() missing 1 required positional argument: 'div'
-Test present: matrix= List of Lists of integers / div= string
+
+	 Test present: matrix= List of Lists of integers / div= string
 
      	 Div is float(inf)
-	 matrix_divided([[3, 3, 3],[6, 6, 6]], float('inf'))
+	 >>> matrix_divided([[3, 3, 3],[6, 6, 6]], float('inf'))
 	 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
