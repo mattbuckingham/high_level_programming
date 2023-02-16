@@ -1,0 +1,34 @@
+The ''text_indentation'' module
+==========================
+
+using ''text_indentation(text)''
+
+Importing function from the module:
+text_indentation = __import__('5-text_indentation').text_indentation
+
+Function Tests:
+
+	 String:
+	 >>> text_indentation("Hi matt. how you doing?\n")
+	 Hi matt.
+
+	 how you doing?
+
+	 
+	 Number:
+	 >>> text_indentation(1)
+	 Traceback (most recent call last):
+	 …
+	 TypeError: text must be a string
+
+	 String of nothing:
+	 >>> text_indentation("")
+
+	 String with just spaces:
+	 >>> text_indentation(" ")
+
+	 No arg:
+	 >>> text_indentation()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: text_indentation() missing 1 required positional argument: 'text'
