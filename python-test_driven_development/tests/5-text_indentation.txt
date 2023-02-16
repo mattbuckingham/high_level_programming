@@ -4,7 +4,7 @@ The ''text_indentation'' module
 using ''text_indentation(text)''
 
 Importing function from the module:
-text_indentation = __import__('5-text_indentation').text_indentation
+	  >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 Function Tests:
 
