@@ -13,7 +13,7 @@ def text_indentation(text):
     previous_char = None
     for char in text:
         if char in ["?", ":", "."]:
-            print(f"{char} \n")
+            print(f"{char}\n")
             previous_char = "\n"
         elif char == " " and previous_char == "\n":
             pass
