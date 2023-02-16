@@ -9,6 +9,7 @@ def text_indentation(text):
     function that prints a text with 2 new lines after each of these characters: ., ? and :
     """
 
+    text = text.strip()
     previous_char = None
     for char in text:
         if char in ["?", ":", "."]:
