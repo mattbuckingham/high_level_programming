@@ -11,10 +11,10 @@ Function Tests:
 	 String:
 	 >>> text_indentation("Hi matt. how you doing?\n")
 	 Hi matt.
-
+	 <BLANKLINE>
 	 how you doing?
+	 <BLANKLINE>
 
-	 
 	 Number:
 	 >>> text_indentation(1)
 	 Traceback (most recent call last):
