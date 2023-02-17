@@ -22,7 +22,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1, 1, -1, 2]), 2)
 
     def test_OneNegative(self):
-        self.assertEqual(max_integer([-1, -1, -1, -2]), 1)
+        self.assertEqual(max_integer([-1, -1, -1, -2]), -1)
 
     def test_OneArg(self):
         self.assertEqual(max_integer([1]), 1)
