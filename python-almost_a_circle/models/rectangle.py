@@ -137,6 +137,7 @@ class Rectangle(Base):
         """
         return {'id': self.id, 'width': self.width, 'height': self.height,
                 'x': self.x, 'y': self.y}
+
     def __str__(self):
         """
         replace the __str_ method to return a string
