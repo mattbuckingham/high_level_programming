@@ -13,6 +13,21 @@ class Square(Rectangle):
 
         super().__init__(width=size, height=size, x=x, y=y, id=id)
 
+    @property
+    def size(self):
+        """
+            Size Getter
+        """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """
+            Size Setter
+        """
+        self.height = value
+        self.width = value
+
     def __str__(self):
         """
         replace the __str_ method to return a string
