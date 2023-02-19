@@ -67,8 +67,8 @@ class Base:
         load instances from json file
         """
         try:
-            with open(cls.__name__ + ".json", "w", encoding="utf-8") as f:
+            with open(cls.__name__ + ".json", "r", encoding="utf-8") as f:
                 inst = cls.from_json_string(f.read())
-                return [cls.create(**dictionary) for ele in inst]
+                return [cls.create(**ele) for ele in inst]
         except FileNotFoundError:
             return []
