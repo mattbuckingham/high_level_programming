@@ -90,4 +90,7 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """
+        return the area of a recangle
+        """
         return (self.__y * self.__x)
