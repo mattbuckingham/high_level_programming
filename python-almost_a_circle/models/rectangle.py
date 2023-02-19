@@ -104,7 +104,7 @@ class Rectangle(Base):
         if self.__width == 0 or self.__height == 0:
             return
 
-        for i in range(self.__y + self.__height):
+        for i in range(self.__y):
             rectangle = rectangle + "\n"
         for j in range(self.__height):
             rectangle = rectangle + (' ' * self.__x) + ("#" * self.__width) + "\n"
