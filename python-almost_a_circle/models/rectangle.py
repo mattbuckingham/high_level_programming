@@ -107,7 +107,7 @@ class Rectangle(Base):
         for i in range(self.__y):
             rectangle = rectangle + "\n"
         for j in range(self.__height):
-            rectangle = rectangle + (' ' * self.__x) + ("#" * self.__width) + "\n"
+            rectangle = rectangle + (' ' * self.__x) + ("#" * self.__width)+"\n"
 
         print(rectangle, end="")
 
