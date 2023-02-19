@@ -39,3 +39,12 @@ class Base:
                 for ele in list_objs:
                     stor.append(ele.to_dictionary())
             f.write(cls.to_json_string(stor))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        return json_string if isnt none
+        """
+        if not json_string:
+            return
+        return json.loads(json_string)
