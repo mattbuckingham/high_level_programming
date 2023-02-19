@@ -43,8 +43,8 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """
-        return json_string if isnt none
+        return json_string as list of dict
         """
         if not json_string:
-            return
+            return []
         return json.loads(json_string)
