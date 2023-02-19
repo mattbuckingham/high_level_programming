@@ -93,4 +93,4 @@ class Rectangle(Base):
         """
         return the area of a recangle
         """
-        return (self.__y * self.__x)
+        return (self.__width * self.__height)
