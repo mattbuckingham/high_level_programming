@@ -3,6 +3,7 @@
 Rectangle Class
 """
 
+
 from models.base import Base
 
 class Rectangle(Base):
@@ -37,7 +38,7 @@ class Rectangle(Base):
         """
         return self.__height
 
-    @width.setter
+    @height.setter
     def height(self, value):
         """
         height setter
@@ -51,7 +52,7 @@ class Rectangle(Base):
         """
         return self.__x
 
-    @width.setter
+    @x.setter
     def x(self, value):
         """
         x setter
@@ -65,7 +66,7 @@ class Rectangle(Base):
         """
         return self.__y
 
-    @width.setter
+    @y.setter
     def y(self, value):
         """
         y setter
