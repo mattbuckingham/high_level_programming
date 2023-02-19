@@ -131,6 +131,12 @@ class Rectangle(Base):
             for arg in kwargs:
                 setattr(self, arg, kwargs.get(arg))
 
+    def to_dictionary(self):
+        """
+        returns the rectangle as a dict
+        """
+        return {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
+
     def __str__(self):
         """
         replace the __str_ method to return a string
