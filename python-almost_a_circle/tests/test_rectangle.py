@@ -54,7 +54,8 @@ class TestRectangle(unittest.TestCase):
         self.assertRaises(TypeError, Rectangle, [1, 2, "3"])
         self.assertRaises(TypeError, Rectangle, [1, 2, 3, "4"])
 
-    def test_neg_val(self)
-    """
-    test
-    """
+    def test_neg_val(self):
+        """
+        test
+        """
+        pass
