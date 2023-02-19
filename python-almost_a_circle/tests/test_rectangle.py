@@ -37,3 +37,24 @@ class TestRectangle(unittest.TestCase):
         """
         r2 = Rectangle(1, 2, 3, 4)
         self.assertEqual(r2.y, 4)
+
+    def test_5_arg(self):
+        """
+
+        """
+        r3 = Rectangle(1, 2, 3, 4, 5)
+        self.assertEqual(r3.id, 5)
+
+    def test_wrong_type(self):
+        """
+        test
+        """
+        self.assertRaises(TypeError, Rectangle, ["1", 2])
+        self.assertRaises(TypeError, Rectangle, [1, "2"])
+        self.assertRaises(TypeError, Rectangle, [1, 2, "3"])
+        self.assertRaises(TypeError, Rectangle, [1, 2, 3, "4"])
+
+    def test_neg_val(self)
+    """
+    test
+    """
