@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+k"""
 takes in an argument and displays all values in the states table of
 hbtn_0e_0_usa where name matches the argument.
 """
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     state = argv[4]
     cursor = dbase.cursor()
     cursor.execute(
-        f"SELECT * FROM states WHERE BINARY name LIKE {state} ORDER BY id ASC")
+"SELECT * FROM states WHERE BINARY name LIKE {} ORDER BY id ASC".format(state))
     results = cursor.fetchall()
 
     for row in results:
