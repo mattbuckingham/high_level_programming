@@ -16,7 +16,7 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
 
-    state = argv[4]
+    state = sys.argv[4]
     cursor = dbase.cursor()
     cursor.execute(
 "SELECT * FROM states WHERE BINARY name LIKE {} ORDER BY id ASC".format(state))
