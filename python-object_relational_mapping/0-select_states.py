@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     cursor = dbase.cursor()
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
-    result = cursor.fetchall()
+    results = cursor.fetchall()
 
     for row in results:
         print(row)
