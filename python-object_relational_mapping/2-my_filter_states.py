@@ -19,7 +19,7 @@ if __name__ == "__main__":
     state = sys.argv[4]
     cursor = dbase.cursor()
     cursor.execute(
-"SELECT * FROM states WHERE BINARY name ='{}'".format(state))
+        "SELECT * FROM states WHERE BINARY name ='{}'".format(state))
     results = cursor.fetchall()
 
     for row in results:
