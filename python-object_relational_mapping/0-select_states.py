@@ -16,7 +16,7 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
 
-    cursor = db.cursor()
+    cursor = dbase.cursor()
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
     result = cursor.fetchall()
 
