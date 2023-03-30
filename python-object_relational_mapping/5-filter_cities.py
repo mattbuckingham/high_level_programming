@@ -26,9 +26,9 @@ if __name__ == "__main__":
     cursor = dbase.cursor()
     SQL = "SELECT cities.name FROM cities"
     JOIN = "INNER JOIN states ON cities.state_id = states.id"
-    WHERE = "WHERE states.name = '{}'".format(state)
+    WHERE = "WHERE states.name = '{}'".format(state_list)
     SQL_query = "{} {} {}".format(SQL, JOIN, WHERE)
-    cursor.execute(SQL_query, (state,))
+    cursor.execute(SQL_query, (state_list,))
     rows=cursor.fetchall()
     results=[]
     for row in rows:
