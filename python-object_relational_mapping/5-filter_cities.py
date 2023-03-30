@@ -8,8 +8,7 @@ import MySQLdb
 
 if __name__ == "__main__":
     """
-    takes in the name of a state as an argument and lists
-    all cities of that state
+    takes in the name of a state as an argument and lists all cities
     """
 
     dbase = MySQLdb.connect(
