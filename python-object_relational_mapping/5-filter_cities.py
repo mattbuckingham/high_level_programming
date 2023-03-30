@@ -24,4 +24,4 @@ if __name__ == "__main__":
     SQL_query = "{} {} {};".format(SQL, JOIN, WHERE)
     cursor.execute(SQL_query)
     results=cursor.fetchall()
-    print(','.join([state[1] for state in results]))
+    print(','.join([state[1] for state in results))
