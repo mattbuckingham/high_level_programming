@@ -21,12 +21,13 @@ if __name__ == "__main__":
 
     state = sys.argv[4]
 
+
     cursor = dbase.cursor()
     SQL = "SELECT cities.name FROM cities"
     JOIN = "INNER JOIN states ON cities.state_id = states.id"
     WHERE = "WHERE states.name = '{}'".format(state)
-    SQL_Query = "{}+{}+{}".format(SQL, JOIN, WHERE)
-    cursor.execute(SQL)
+    SQL_query = "{}+{}+{}".format(SQL, JOIN, WHERE)
+    cursor.execute(SQL_query)
     rows=cursor.fetchall()
     results=[]
     for row in rows:
