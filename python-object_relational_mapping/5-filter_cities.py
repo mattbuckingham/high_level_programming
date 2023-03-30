@@ -19,7 +19,8 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
 
-    state = sys.argv[4]
+    state_str = sys.argv[4]
+    state_list = state_str.split(';')
 
 
     cursor = dbase.cursor()
