@@ -16,13 +16,12 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
 
-    state_list = sys.argv[4]
 
     cursor = dbase.cursor()
     SQL = "SELECT cities.name FROM cities"
     JOIN = "INNER JOIN states ON cities.state_id = states.id"
-    WHERE = "WHERE states.name = '{}'".format(state_list)
+    WHERE = "WHERE states.name = '{}'".format(sys.argv[4])
     SQL_query = "{} {} {};".format(SQL, JOIN, WHERE)
-    cursor.execute(SQL_query, (state_list,))
+    cursor.execute(SQL_query)
     results=cursor.fetchall()
     print(','.join([state[1] for state in results]))
