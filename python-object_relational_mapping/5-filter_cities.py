@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     state_str = sys.argv[4]
     state_list = state_str.split(';')
-
+    state_list = state_list[0].replace("\","")
 
     cursor = dbase.cursor()
     SQL = "SELECT cities.name FROM cities"
