@@ -26,8 +26,8 @@ if __name__ == "__main__":
     SQL = "SELECT cities.name FROM cities"
     JOIN = "INNER JOIN states ON cities.state_id = states.id"
     WHERE = "WHERE states.name = '{}'".format(state)
-    SQL_query = "{}+{}+{}".format(SQL, JOIN, WHERE)
-    cursor.execute(SQL_query)
+    SQL_query = "{} {} {}".format(SQL, JOIN, WHERE)
+    cursor.execute(SQL_query, (state,))
     rows=cursor.fetchall()
     results=[]
     for row in rows:
