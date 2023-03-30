@@ -18,10 +18,11 @@ if __name__ == "__main__":
         passwd=sys.argv[2],
         db=sys.argv[3]
     )
-
+    cursor = dbase.cursor()
     SQL = "SELECT cities.id, cities.name, states.name FROM cities"
     JOIN = "INNER JOIN states ON cities.state_id = states.id"
 
-    data = dbase.cursor.execute('{} {}'.format(SQL, JOIN))
+    cursor.execute('{} {}'.format(SQL, JOIN))
+    data = cursor.fetchall()
     for row in data:
         print(row)
