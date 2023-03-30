@@ -22,8 +22,10 @@ if __name__ == "__main__":
     state = sys.argv[4]
 
     cursor = dbase.cursor()
-    SQL = "SELECT cities.name FROM cities INNER JOIN states ON cities.state_id =
-states.id WHERE states.name = '{}'".format(state)
+    SQL = "SELECT cities.name FROM cities"
+    JOIN = "INNER JOIN states ON cities.state_id = states.id"
+    WHERE = "WHERE states.name = '{}'".format(state)
+    SQL_Query = "{}+{}+{}".format(SQL, JOIN, WHERE)
     cursor.execute(SQL)
     rows=cursor.fetchall()
     results=[]
