@@ -22,6 +22,6 @@ if __name__ == "__main__":
     SQL = "SELECT cities.id, cities.name, states.name FROM cities"
     JOIN = "INNER JOIN states ON cities.state_id = states.id"
 
-    data = db.cursor.execute('{} {}'.format(SQL, JOIN))
+    data = dbase.cursor.execute('{} {}'.format(SQL, JOIN))
     for row in data:
         print(row)
